@@ -17,7 +17,7 @@ services:
       - USER=app_user
       - PASSWORD=1234
       - HOST=mysql
-      - PORT=''
+      - PORT=3036
     networks:
       - todoapp-net
     depends_on:
