@@ -12,6 +12,12 @@ FROM python:${PYTHON_VERSION} as run
 WORKDIR /app
 
 ENV PYTHONUNBUFFERED=1
+ENV DB_ENGINE = ""
+ENV DB_NAME = ""
+ENV DB_USER = ""
+ENV DB_PASSWORD = ""
+ENV DB_HOST = ""
+ENV DB_PORT = ""
 
 COPY --from=builder /app .
 
